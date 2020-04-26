@@ -1,5 +1,20 @@
 # Testing Vue.js Components
 
+```
+code .
+Ctrl + Shift + `
+yarn install
+yarn jest
+yarn add vue-template-compiler vue-jest
+add "^.+\\.vue$": "vue-jest", to transform in jest.config.js
+yarn jest <specs/test.spec.js> --watch
+yarn add @vue/test-utils
+jest.useFakeTimers()
+jest.advanceTimerByTime(ms)
+jest.spyOn(obj,'method')
+object.trigger('input') after change value to notify changes
+```
+
 [![](https://vueschool.s3.amazonaws.com/9318e19655ce267304ebf5df7eca7154/testing-vuejs-components.png)](https://vueschool.io/courses/learn-how-to-test-vuejs-components)
 
 This repository contains the the starting point of the [Testing Vue.js Components](https://vueschool.io/courses/learn-how-to-test-vuejs-components) course.
@@ -11,6 +26,7 @@ In this course, you’ll learn everything you need to know to write proper unit 
 Not sure how to mount and render your component to perform assertions. Not sure what you should and shouldn't test? Or how to test a specific thing? This course is for you!
 
 **By the end of this testing course you will know**
+
 - Which tools are required for an efficient testing workflow
 - How to mount and render your Vue components
 - How to programmatically interact with your components through Vue Test Utils
